@@ -15,11 +15,13 @@ const CustomGrid = ({ gridType = 1, children }: Props) => {
   const gridTypeClass: string = `grid__${gridType}`;
 
   return (
-    <div className={styles[gridTypeClass]}>
-      {/* <div>CustomGrid {gridType}</div> */}
-      <CustomGridItemBig element={children[0]} />
-      <CustomGridItemSmall elementOne={children[1]} elementTwo={children[2]} />
-      <CustomGridItemSmall elementOne={children[3]} elementTwo={children[4]} />
+    <div>
+      <h1 className={styles["custom__grid--title"]}>Diagramation Template</h1>
+      <div className={styles[gridTypeClass]}>
+        <CustomGridItemBig element={children[0]} />
+        <CustomGridItemSmall elementOne={children[1]} elementTwo={children[2]} />
+        <CustomGridItemSmall elementOne={children[3]} elementTwo={children[4]} />
+      </div>
     </div>
   );
 };
