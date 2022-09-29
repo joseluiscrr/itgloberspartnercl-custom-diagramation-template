@@ -1,3 +1,5 @@
+// ! Esquema que va a manejar el admin VTEX
+
 const customGridSchema = {
   title: "Grilla Custom",
   type: "object",
