@@ -1,3 +1,5 @@
-import CustomGrid from "./components/CustomGrid";
+// * Encapsulamiento del componente para protegerlo
 
-export default CustomGrid;
+import CustomGrid from "./components/CustomGrid"; // * Llamado al componente principal
+
+export default CustomGrid; // ! Exportación obligatoria
